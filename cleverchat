@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+
+import sys
+from cleverbot import Cleverbot
+
+if len(sys.argv) == 1:
+  sys.exit("You need to say something to the bot ;)")
+
+cb = Cleverbot()
+cb.ask(sys.argv[1:])
+
+
